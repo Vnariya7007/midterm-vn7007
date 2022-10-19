@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vnMidterm</title>
+  <link rel="stylesheet" href="./myStyles.css">
+  <link rel="stylesheet" href="./mediaQuery.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+  .card {
+    display: block;
+   }
+   
+   .card-image {
+    width: 100%;
+    border-radius: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+   }
+  
+   .container {
+    margin: 0 2rem;
+   }
+  
+   .card-container {
+    grid-template-columns: 1fr;
+   }
+  
+   .card-button {
+    justify-content: center;
+    width: 100%;
+   }</style>
+ </head>
+
+ <body>
+  <div class="container bg-slate-200">
+    <header class="sticky top-0">
+        <nav class="flex justify-center items-center p-4">
+            <div class="navbar content-center">
+                <a class="hover:bg-green-400 hover:border-green-400 hover:border-8 mx-10" href="#abtContent">Home</a>
+                <a class="hover:bg-green-400 hover:border-green-400 hover:border-8 mx-10" href="#persoContent">Shop</a>
+                <a class="hover:bg-green-400 hover:border-green-400 hover:border-8 ml-10" href="#abilitContent">Location</a>
+            </div>
+        </nav>
+    </header>
+   <h1 class="heading flex justify-center">Product Detail View</h1>
+   <!-- S1 -->
+   <div class="card">
+    <img src="images/s1.jpg" alt="s1" class="card-image">
+    <div class="card-details">
+     <div class="card-details-header-container">
+      <p class="card-header-info">Sneaker 1</p>
+      <p class="card-header-price">$200</p>
+      <p class="card-header-address">V. Good</p>
+     </div>
+
+     
+
+     <div class="agent-container">
+      <div>
+       <p class="agent-name">Size</p>
+       <p class="agent-phone-number">6 7 8 9</p>
+      </div>
+     </div>
+
+     <a class="card-button" href="detailsPage.html">
+      View
+      <img src="./images/chevronright-icon.png" alt="chevron icon">
+     </a>
+    </div>
+   </div>
+   </div>
+   </body>
+   </html>
